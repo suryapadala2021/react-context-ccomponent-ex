@@ -1,0 +1,96 @@
+/* Write your CSS here */
+
+.content-box {
+  background-color: #f1f5f9;
+  text-align: center;
+  padding: 30px;
+  margin-top: 10px;
+}
+.content-heading {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 24px;
+}
+.content {
+  font-family: 'Roboto';
+  color: #64748b;
+  font-size: 24px;
+}
+.left-nav-box {
+  background-color: #cbd5e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: 5px;
+}
+.nav-bar-menu-heading {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+}
+.nav-list {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.left-nav-item {
+  font-family: 'Roboto';
+  font-size: 26px;
+  color: #64748b;
+  font-weight: 500;
+  width: 100px;
+}
+.right-nav-box {
+  background-color: #cbd5e1;
+  padding: 40px;
+  margin-top: 5px;
+}
+.right-nav-items-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-nav-item {
+  height: 150px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+}
+.right-nav-item-content {
+  color: #64748b;
+  font-size: 26px;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    display: flex;
+    justify-content: center;
+  }
+  .left-nav-box {
+    width: 25%;
+    flex-shrink: 0;
+  }
+  .nav-list {
+    display: block;
+  }
+  .right-nav-box {
+    width: 25%;
+    flex-shrink: 0;
+  }
+  .content-box {
+    flex-grow: 1;
+  }
+}
