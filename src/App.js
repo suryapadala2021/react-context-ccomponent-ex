@@ -10,16 +10,16 @@ import './App.css'
 class App extends Component {
   state = {showContent: true, showLeftNavbar: true, showRightNavbar: true}
 
-  toggleShowContent = () => {
+  onToggleShowContent = () => {
     this.setState(prev => ({showContent: !prev.showContent}))
   }
 
-  toggleShowLeftNav = () => {
-    this.setState(prev => ({showLeftNav: !prev.showLeftNav}))
+  onToggleShowLeftNavbar = () => {
+    this.setState(prev => ({showLeftNavbar: !prev.showLeftNavbar}))
   }
 
-  toggleShowRightNav = () => {
-    this.setState(prev => ({showRightNav: !prev.showRightNav}))
+  onToggleShowRightNavbar = () => {
+    this.setState(prev => ({showRightNavbar: !prev.showRightNavbar}))
   }
 
   render() {
@@ -30,9 +30,9 @@ class App extends Component {
           showContent,
           showLeftNavbar,
           showRightNavbar,
-          onToggleShowContent: this.toggleShowContent,
-          onToggleShowLeftNavbar: this.toggleShowLeftNav,
-          onToggleShowRightNavbar: this.toggleShowRightNav,
+          onToggleShowContent: this.onToggleShowContent,
+          onToggleShowLeftNavbar: this.onToggleShowLeftNavbar,
+          onToggleShowRightNavbar: this.onToggleShowRightNavbar,
         }}
       >
         <ConfigurationController />
